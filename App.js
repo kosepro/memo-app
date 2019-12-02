@@ -2,8 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import Appbar from './src/components/Appbar';
-import MemoList from './src/components/MemoList';
-import CircleButton from './src/elements/CircleButton';
+import MemoListScreen from './src/screens/MemoListScreen';
 
 // import BodyText from './src/elements/BodyText';
 
@@ -12,10 +11,8 @@ export default class App extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-
                 <Appbar />
-                <MemoList />
-                <CircleButton>+</CircleButton>
+                <MemoListScreen />
             </View>
         );
     }
